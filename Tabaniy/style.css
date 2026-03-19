@@ -213,14 +213,16 @@ transform:translateY(-2px);
 .adopt-form{
 width:50%;
 margin: auto;
-margin-bottom:20px;
+margin-top:20px;
+margin-bottom:40px;
 display:flex;
 flex-direction:column;
 gap:15px;
 }
 
 .adopt-form input,
-.adopt-form textarea{
+.adopt-form textarea,
+.adopt-form select{
 padding:10px;
 border:1px solid #ccc;
 }
@@ -228,7 +230,7 @@ border:1px solid #ccc;
 .adopt-form button{
 background:#02053d;
 color:white;
-padding:10px;
+padding:17px;
 border:none;
 cursor:pointer;
 }

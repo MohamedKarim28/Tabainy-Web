@@ -39,8 +39,19 @@
 <label for="id">Passport / ID:</label>
 <input type="text" id="id" required>
 
+<label for="petName">Pet Name:</label>
+<select id="petName" required onchange="updatePetId()">
+    <option value="" disabled selected>-- Select a pet --</option>
+    <option value="P001">Honey</option>
+    <option value="P002">Flurry</option>
+    <option value="P003">Lotus</option>
+    <option value="P004">Loli</option>
+    <option value="P005">Oreo</option>
+    <option value="P006">Fluffy</option>
+</select>
+
 <label for="pet">Pet ID:</label>
-<input type="text" id="pet" required>
+<input type="text" id="pet" readonly placeholder="Auto-filled">
 
 <label>Previous Experience:</label>
 <textarea required></textarea>
@@ -94,14 +105,20 @@
 
         </footer>
         <script>
-function validateForm(){
-  let fname = document.getElementById("fname").value;
+function updatePetId() {
+    const select = document.getElementById("petName");
+    document.getElementById("pet").value = select.value;
+}
 
-  if(fname === ""){
-    alert("Please fill all fields");
-    return false;
-  }
-  return true;
+function validateForm(){
+    const fname = document.getElementById("fname").value;
+    const petName = document.getElementById("petName").value;
+
+    if(fname === "" || petName === ""){
+        alert("Please fill all fields");
+        return false;
+    }
+    return true;
 }
 </script>
     </body>
