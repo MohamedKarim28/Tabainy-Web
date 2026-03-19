@@ -21,11 +21,6 @@
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
 
-                <div class="nav-buttons">
-                    <button class="btn-outline">Sign up</button>
-                    <button class="btn-outline">Profile</button>
-                </div>
-
             </div>
 
         </header>
@@ -100,24 +95,22 @@
 
             </section>
 
-        <footer class="footer">
-
-                <div class="footer-container">
-
-                    <div class="footer-col">
-                        <h3>Contact Us</h3>
-                        <p>Email: Tabaniy@TabaniyWeb.com</p>
-                        <p>Phone: +201025430402</p>
-                        <p>Address: El Shorouk City, BUE</p>
-                    </div>
+            <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:Tabaniy@TabaniyWeb.com">Tabaniy@TabaniyWeb.com</a></p>
+                <p>Phone: <a href="tel:+201025430402">+201025430402</a></p>
+                <p>Address: El Shorouk City, BUE</p>
+            </div>
 
                     <div class="footer-col">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Adoption process</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="home.html#adoption-process">Adoption process</a></li>
+                            <li><a href="faqs-privacy.html">FAQs</a></li>
+                            <li><a href="faqs-privacy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
 
@@ -143,5 +136,24 @@
                 </p>
 
             </footer>
+
+    <script>
+        // Handle hash navigation and redirect if needed
+        function handleHashNavigation() {
+            const hash = window.location.hash;
+            if (hash === '#adoption-process') {
+                // If on another page, redirect to home.html with hash
+                if (!window.location.pathname.includes('home.html')) {
+                    window.location.href = 'home.html' + hash;
+                    return;
+                }
+            }
+        }
+
+        // Call on page load
+        window.addEventListener('load', handleHashNavigation);
+        handleHashNavigation();
+    </script>
+
     </body>
 </html>

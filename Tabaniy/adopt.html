@@ -1,143 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Adopt</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt - Tabaniy Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-    <body>
-        <header class="navbar">
-
+<body>
+    <header class="navbar">
         <div class="nav-container">
-
             <div class="logo">
-            <img src="./images/tabaniy logo.png" height="40">
+                <img src="./images/tabaniy logo.png" alt="Tabaniy Logo" height="40">
             </div>
-
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="adopt.html">Adopt</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
-
-            <div class="nav-buttons">
-                <button class="btn-outline">Sign up</button>
-                <button class="btn-outline">Profile</button>
-            </div>
-
         </div>
-
     </header>
-    <hr>
 
-       <section class="adopt">
+    <main>
+        <section class="adopt">
+            <h1>Available Pets for Adoption</h1>
+            <aside class="filters">
+                <h2>Filter Pets</h2>
+                <form>
+                    <label>Age: <input type="number" placeholder="Min"> - <input type="number" placeholder="Max"></label>
+                    <label>Weight (KG): <input type="number" placeholder="0"></label>
+                    <label>Breed: <input type="text" placeholder="Breed"></label>
+                    <button type="submit" class="searchbutton">Search</button>
+                </form>
+            </aside>
 
+            <div class="cards-container">
+                <article class="card">
+                    <img src="images/dog1.jpg" alt="Pet 1">
+                    <h3>Pet name 1</h3>
+                    <p>Pet ID: 1</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
 
-        <div class="filters">
+                <article class="card">
+                    <img src="images/dog2.jpg" alt="Pet 2">
+                    <h3>Pet name 2</h3>
+                    <p>Pet ID: 2</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
 
-            <h2>Filter Pets</h2>
-            <p>Age <input type="number" placeholder="Min"> - <input type="number" placeholder="Max"> </p>
-            <p><br> weight <input type="number" placeholder="in KG"> </p>
-            <p><br> Breed <input type="text" placeholder="Breed"></p>
-            <button class="searchbutton">search</button>
+                <article class="card">
+                    <img src="images/dog3.jpg" alt="Pet 3">
+                    <h3>Pet name 3</h3>
+                    <p>Pet ID: 3</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
 
-            <hr>
+                <article class="card">
+                    <img src="images/dogb1.jpeg" alt="Pet 4">
+                    <h3>Pet name 4</h3>
+                    <p>Pet ID: 4</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
 
+                <article class="card">
+                    <img src="images/doga2.jpeg" alt="Pet 5">
+                    <h3>Pet name 5</h3>
+                    <p>Pet ID: 5</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
+
+                <article class="card">
+                    <img src="images/cata1.jpeg" alt="Pet 6">
+                    <h3>Pet name 6</h3>
+                    <p>Pet ID: 6</p>
+                    <a href="adopt-form.html" class="btn">Adopt</a>
+                </article>
             </div>
-
-
-            <div class="grid">
-
-            <div class="card">
-            <img src="images/dog1.jpg">
-            <h4>Pet name 1</h4>
-            <p>Pet ID: 1</p>
-            <button href="adopt-form.html">Adopt</button>
-            </div>
-
-            <div class="card">
-            <img src="images/dog2.jpg">
-            <h4>Pet name 2</h4>
-            <p>Pet ID: 2</p>
-            <button href="adopt-form.html">Adopt</button>
-            </div>
-
-            <div class="card">
-            <img src="images/dog3.jpg">
-            <h4>Pet name 3</h4>
-            <p>Pet ID: 3</p>
-            <button href="adopt-form.html">Adopt</button>
-            </div>
-
-            <div class="card">
-            <img src="images/dog4.jpg">
-            <h4>Pet name 4</h4>
-            <p>Pet ID: 4</p>
-            <button href="adopt-form.html">Adopt</button>
-            </div>
-
-            <div class="card">
-            <img src="images/dog5.jpg">
-            <h4>Pet name 5</h4>
-            <p>Pet ID: 5</p>
-            <button href="adopt-form.html">Adopt</button>
-            </div>
-
-            <div class="card">
-            <img src="images/dog6.jpg">
-            <h4>Pet name 6</h4>
-            <p>Pet ID: 6</p>
-            <button>Adopt</button>
-            </div>
-
-            </div>
-
         </section>
+    </main>
 
-        <footer class="footer">
-
+     <footer class="footer">
             <div class="footer-container">
-
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p>Email: Tabaniy@TabaniyWeb.com</p>
-                    <p>Phone: +201025430402</p>
-                    <p>Address: El Shorouk City, BUE</p>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Adoption process</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-
-                        <h3>Follow us</h3>
-
-                        <div class="social-icons">
-
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
-                            <a href="#"><i class="fa-brands fa-tiktok"></i ></a>
-
-                        </div>
-                </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:Tabaniy@TabaniyWeb.com">Tabaniy@TabaniyWeb.com</a></p>
+                <p>Phone: <a href="tel:+201025430402">+201025430402</a></p>
+                <p>Address: El Shorouk City, BUE</p>
             </div>
-            <hr> 
 
-            <p class="copyright">
-            © 2026 Tabaniy Pet Adoption. All rights reserved.
-            </p>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="home.html#adoption-process">Adoption process</a></li>
+                            <li><a href="faqs-privacy.html">FAQs</a></li>
+                            <li><a href="faqs-privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
 
-        </footer>
+                    <div class="footer-col">
 
-        </body>
+                            <h3>Follow us</h3>
+
+                            <div class="social-icons">
+
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                            </div>
+                    </div>
+                </div>
+                <hr> 
+
+                <p class="copyright">
+                © 2026 Tabaniy Pet Adoption. All rights reserved.
+                </p>
+
+            </footer>
+    </body>
 </html>

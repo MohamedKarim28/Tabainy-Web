@@ -28,11 +28,6 @@
                 <li><a href="blog.html">Blog</a></li>
             </ul>
 
-            <div class="nav-buttons">
-                <button class="btn-outline">Sign up</button>
-                <button class="btn-outline">Profile</button>
-            </div>
-
         </div>
 
     </header>
@@ -50,6 +45,13 @@
 
     </section>
 
+        <section class="why-adopt">
+        <h2>Why Adopt a Pet?</h2>
+        <p>
+        Adopting a pet gives animals a second chance at life and helps reduce stray animals.
+        </p>
+        </section>
+
 
     <section class="container">
 
@@ -61,21 +63,21 @@
                 <img src="./images/doga2.jpeg">
                 <h3>Max</h3>
                 <p>Friendly dog</p>
-                <button href="adopt-form.html">Adopt</button>
+               <a href="adopt-form.html" class="adopt-btn">Adopt</a>
             </div>
 
             <div class="card">
                 <img src="./images/cata1.jpeg">
                 <h3>Luna</h3>
                 <p>Lovely cat</p>
-                <button href="adopt-form.html">Adopt</button>
+                <a href="adopt-form.html" class="adopt-btn">Adopt</a>
             </div>
 
             <div class="card">
                 <img src="./images/dogb1.jpeg">
                 <h3>Milo</h3>
                 <p>Cute dog</p>
-                <button href="adopt-form.html">Adopt</button>
+                <a href="adopt-form.html" class="adopt-btn">Adopt</a>
             </div>
 
         </div>
@@ -83,7 +85,7 @@
     </section>
 
 
-    <section class="how-it-works">
+    <section class="how-it-works" id="adoption-process">
 
         <h2>How Adoption Works</h2>
 
@@ -114,23 +116,21 @@
 
 
         <footer class="footer">
-
-            <div class="footer-container">
-
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p>Email: Tabaniy@TabaniyWeb.com</p>
-                    <p>Phone: +201025430402</p>
-                    <p>Address: El Shorouk City, BUE</p>
-                </div>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:Tabaniy@TabaniyWeb.com">Tabaniy@TabaniyWeb.com</a></p>
+                <p>Phone: <a href="tel:+201025430402">+201025430402</a></p>
+                <p>Address: El Shorouk City, BUE</p>
+            </div>
 
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Adoption process</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    <li><a href="#adoption-process">Adoption process</a></li>
+                    <li><a href="faqs-privacy.html">FAQs</a></li>
+                    <li><a href="faqs-privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -157,6 +157,36 @@
 
         </footer>
 
+
+    <script>
+        // Handle hash navigation and smooth scroll
+        function scrollToSection() {
+            const hash = window.location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    // Try multiple times with increasing delays
+                    setTimeout(() => {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 200);
+                    
+                    // Backup attempt after longer delay
+                    setTimeout(() => {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 500);
+                }
+            }
+        }
+
+        // Call on page load
+        window.addEventListener('load', scrollToSection);
+        
+        // Also call immediately in case page is already loaded
+        scrollToSection();
+        
+        // Call again after a short delay
+        setTimeout(scrollToSection, 300);
+    </script>
 
     </body>
 </html>
