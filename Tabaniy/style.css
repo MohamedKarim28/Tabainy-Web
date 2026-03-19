@@ -32,7 +32,7 @@ padding:15px 0;
   font-weight: bold;
 }
 
-/* Hover effect */
+/* Hover effect Mohamed Karim */
 .nav-links a:hover {
   color: #02053d;
   border-bottom: 2px solid #02053d;
@@ -209,7 +209,7 @@ box-shadow:0 4px 12px rgba(255,152,0,0.3);
 transform:translateY(-2px);
 }
 
-/*adoptform*/
+/*adoptform Mohamed Ashraf*/
 .adopt-form{
 width:50%;
 margin: auto;
@@ -697,7 +697,6 @@ color:#555;
     cursor:pointer;
 }
 
-/*Mohamed Karim*/
 .adopt-container{
   display:flex;
   flex-wrap:wrap;
@@ -706,7 +705,7 @@ color:#555;
   justify-content:center;
 }
 
-
+/*Mohamed Karim*/
 .card:hover{
   transform: translateY(-5px);
   box-shadow:0 8px 12px rgba(0,0,0,0.15);
@@ -717,7 +716,7 @@ button:hover{
   color:white;
 }
 
-/* FAQs & Privacy Policy Page */
+/* FAQs & Privacy Policy Page Mohamed Karim */
 .info-header{
 background:linear-gradient(135deg, #02053d 0%, #0f0a5c 100%);
 color:white;
